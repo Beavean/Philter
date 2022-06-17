@@ -31,8 +31,8 @@
                                     <constraint firstItem="NEj-j8-icK" firstAttribute="top" secondItem="VJ0-8r-Nfn" secondAttribute="top" constant="10" id="lCy-ik-T6d"/>
                                 </constraints>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Intensity:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IYJ-HJ-RKS">
-                                <rect key="frame" x="20" y="773" width="70" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Intensity" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IYJ-HJ-RKS">
+                                <rect key="frame" x="20" y="773" width="65" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="Ker-Yl-KRI"/>
                                 </constraints>
@@ -41,7 +41,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="YEr-ex-AEe">
-                                <rect key="frame" x="97" y="769" width="299" height="30"/>
+                                <rect key="frame" x="92" y="769" width="304" height="30"/>
                                 <connections>
                                     <action selector="intensityChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="R5t-BG-kIw"/>
                                 </connections>
@@ -51,8 +51,12 @@
                                 <constraints>
                                     <constraint firstAttribute="width" constant="120" id="VYv-sp-EOK"/>
                                 </constraints>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Change filter"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Change filter"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Change filter">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="15"/>
+                                </buttonConfiguration>
                                 <connections>
                                     <action selector="changeFilter:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4qq-b5-shj"/>
                                 </connections>
@@ -62,8 +66,11 @@
                                 <constraints>
                                     <constraint firstAttribute="width" constant="60" id="3ef-wL-3y9"/>
                                 </constraints>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Save"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Save"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Save">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="15"/>
+                                </buttonConfiguration>
                                 <connections>
                                     <action selector="save:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OG6-cK-3Uh"/>
                                 </connections>
@@ -90,8 +97,8 @@
                     </view>
                     <navigationItem key="navigationItem" id="wir-CH-y3I"/>
                     <connections>
-                        <outlet property="imageView" destination="NEj-j8-icK" id="wF8-2c-wiz"/>
-                        <outlet property="intensity" destination="IYJ-HJ-RKS" id="uHQ-X1-84l"/>
+                        <outlet property="imageView" destination="NEj-j8-icK" id="9Gy-lI-lID"/>
+                        <outlet property="intensity" destination="YEr-ex-AEe" id="ms0-I2-G5p"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
