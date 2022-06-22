@@ -14,6 +14,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     
     @IBOutlet var imageView: UIImageView!
     @IBOutlet var intensity: UISlider!
+    @IBOutlet var changeFilterOutlet: UIButton!
     
     var currentImage: UIImage!
     
@@ -75,6 +76,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     }
     
     func setFilter(action: UIAlertAction) {
+        changeFilterOutlet.setTitle(action.title, for: .normal)
         guard currentImage != nil else { return }
         guard let actionTitle = action.title else { return }
         
